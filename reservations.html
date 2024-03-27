@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations - Hotel Website</title>
+  <link rel="stylesheet" href="vistavoyage.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Hotel Vista Voyage</a></h1>
+    </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class = "reception"></section>
+  <section class="reservation">
+   <h2>Check Your Reservations</h2>
+   <form action="check_reservation.php" method="POST">
+     <label for="confirmation">Confirmation Number:</label>
+      <input type="text" id="confirmation" name="confirmation" required><br>
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required><br>
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required><br>
+     <label for="checkin">Check-In Date:</label>
+     <input type="date" id="checkin" name="checkin" required> <br>
+     <label for="checkout">Check-Out Date:</label>
+     <input type="date" id="checkout" name="checkout" required><br>
+     <button type="submit">Check Reservations</button>
+   </form>
+ </section>
+   <div class="reservation-link">
+     <a href="checkavailability.html"><button>Make a reservation now!!!</button></a>
+   </div>
+<div>
+  334 Sawayn Grove
+  <br>
+  Carrollton, GA 30117
+  <br>
+  <a id= "mobile" href="tel: 888-555-5555">888-555-5555</a>
+  <span id="desktop">888-555-5555</span>
+  <br>
+</div>
+</main>
+<footer>
+  <br>
+  Copyright © 2020 Vista Voyage Hotel
+    <br>
+  <a mailto: href="aayush@adhikari.com">aayush@adhikari.com</a>
+</footer>
+</body>
+</html>
