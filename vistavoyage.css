@@ -8,7 +8,14 @@ body {
 header {
   padding: 5px 0;
   background-color: #333;
-  font-size: 1em;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header img {
+  width: 100px;
+  margin-right: 20px;
 }
 header a:link, header a:visited {text-decoration: none;
 color: #ffcc00}
@@ -119,7 +126,10 @@ footer {
   font-weight: bold;
 }
 .reservation form input[type="text"],
-.reservation form input[type="date"] {
+.reservation form input[type="date"],
+.reservation form input[type="tel"],
+.reservation form input[type="email"],
+.reservation form input[type="number"]{
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
@@ -150,11 +160,69 @@ footer {
 .reservation-link button:hover {
   background-color: #0056b3;
 }
+.hidden {
+  display: none;
+}
 
+.button button{
+  background-size: cover;
+  border: none;
+  width: 350px;
+  height: 300px;
+  margin: 5px;
+  cursor: pointer;
+  color: #ffcc00;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+.button button:hover {
+  color: #ffa500;
+}
+#oneBed{
+  background-image: url('oneBed.jpg')
+}
 
+#twoBed{
+  background-image: url('twoBed.jpg')
+}
+
+#stayThreeNights{
+  background-image: url('three.jpg');
+}
+#earlyBooking{
+  background-image: url('twen.jpg');
+}
+#repeatCustomers{
+  background-image: url('repeat.jpg');
+}
 h2, h3, h4{
   color: #ffcc00;
 }
+
+.featureList {
+  list-style-type: none;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 30px;
+  text-align:justify;
+  font-weight: bold;
+}
+
+.featureIcon{
+  display: grid;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0px 20px;
+  font-size: 120px;
+}
+
+
 @media only screen and (min-width: 600px) {
   header {
     text-align: center;

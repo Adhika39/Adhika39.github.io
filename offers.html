@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotional Offers and Deals</title>
+    <link rel="stylesheet" href="vistavoyage.css">
+</head>
+<body>
+  <header>
+    <img src="H.png" alt="Hotel Logo">
+    <h1><a href="index.html">Hotel Vista Voyage</a></h1>
+    </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="booknow.html">Book now</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+<main>
+
+    <section class = "reception"></section>
+    <h2>Promotional Offers and Deals</h2>
+    <p>Check out our latest promotional offers and deals!</p>
+
+      <div class="button">
+        <button id="stayThreeNights">Stay 3 nights, get the 4th night free!</button>
+        <button id="earlyBooking">20% off for early bookings made 30 days in advance.</button>
+        <button id="repeatCustomers">Special discount for repeat customers.</button>
+      </div>
+    <div>
+      334 Sawayn Grove
+      <br>
+      Carrollton, GA 30117
+      <br>
+      <a id= "mobile" href="tel: 888-555-5555">888-555-5555</a>
+      <span id="desktop">888-555-5555</span>
+      <br>
+    </div>
+  </main>
+  <footer>
+    <br>
+    Copyright © 2020 Vista Voyage Hotel
+      <br>
+    <a mailto: href="aayush@adhikari.com">aayush@adhikari.com</a>
+  </footer>
+  <script type="text/javascript">
+      document.getElementById("stayThreeNights").addEventListener("click", function() {
+    var confirmationNumber = prompt("Please enter your confirmation number for three bookings:");
+    if (confirmationNumber) {
+      window.location.href = "booknow.html?confirmation=" + confirmationNumber;
+    }
+    });
+
+    document.getElementById("earlyBooking").addEventListener("click", function() {
+    window.location.href = "booknow.html";
+    });
+
+    document.getElementById("repeatCustomers").addEventListener("click", function() {
+    window.location.href = "booknow.html";
+    });
+    document.querySelectorAll("button[id^='stay']").forEach(function(button) {
+    button.addEventListener("click", function() {
+      document.getElementById("bookNowButton").style.display = "block";
+    });
+    });
+  </script>
+</body>
+</html>
