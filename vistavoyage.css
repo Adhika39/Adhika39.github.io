@@ -222,7 +222,45 @@ h2, h3, h4{
   font-size: 120px;
 }
 
+.container {
+  display: grid;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.attractions {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    list-style-type: none;
+}
+
+.attractions li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.attractions a {
+    text-decoration: none;
+    color: #333;
+}
+
+.attractions img {
+    width: 200px; /* Set the width */
+    height: 200px; /* Set the height */
+    border-radius: 50%; /* Create a circular shape */
+    border: 2px solid #333; /* Add a border */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.attractions img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
 @media only screen and (min-width: 600px) {
   header {
     text-align: center;

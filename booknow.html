@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Hotel VistaVoyage, a luxurious hotel located in Carrollton, GA. Experience unparalleled comfort and hospitality with our premium amenities including a swimming pool, fitness center, and gourmet dining options. Book your stay today and indulge in a memorable experience of relaxation and elegance.">
     <title>Book A Room now</title>
     <link rel="stylesheet" href="vistavoyage.css">
 </head>
@@ -18,6 +19,7 @@
       <li><a href="offers.html">Offers</a></li>
       <li><a href="reservations.html">Reservations</a></li>
       <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="explore.html">Explore</a></li>
       <li><a href="aboutus.html">About Us</a></li>
     </ul>
   </nav>
@@ -30,7 +32,7 @@
       <button onclick="showForm('Two Queen Beds Room')" id="twoBed">Two Queen Beds Room</button>
       <button onclick="showForm('King Bed Room')" id="oneBed">King Bed</button>
     </div>
-    <form id="reservationForm" action="booknow.php" method="post" class="hidden">
+    <form id="reservationForm" action="https://webdevbasics.net/scripts/demo.php" method="post" class="hidden">
       <label for="checkInDate">Check-in Date:</label>
       <input type="date" id="checkInDate" name="checkInDate" required><br>
 
@@ -97,6 +99,7 @@
       document.getElementById('roomType').value = roomType;
       document.getElementById('oneBed').style.display = 'none';
       document.getElementById('twoBed').style.display = 'none';
+  });
     }
   </script>
 </body>
