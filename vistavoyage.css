@@ -202,11 +202,11 @@ h2, h3, h4{
   color: #ffcc00;
 }
 
-.featureList {
+/* .featureList {
   list-style-type: none;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minimum and maximum width as needed */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   text-align:justify;
   font-weight: bold;
@@ -214,6 +214,28 @@ h2, h3, h4{
 
 .featureIcon{
   display: grid;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0px 20px;
+  font-size: 120px;
+} */
+
+.featureList {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.featureList td {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.featureIcon {
+  text-align: center;
   width: 200px;
   height: 200px;
   line-height: 200px;
